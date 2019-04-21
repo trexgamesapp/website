@@ -78,7 +78,7 @@ Need to override the 3.3 new styles for modern browsers & apply opacity
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
     {% for item in page.slider.slides %}
-        <div class="item{% if forloop.first %} active{% endif %}" style="background: url('{{baseurl}}{{ item.image }}') center center no-repeat; background-size: cover;">
+        <div class="item{% if forloop.first %} active{% endif %}" style="background: url('{{site.url}}{{ item.image }}') center center no-repeat; background-size: cover;">
         <div>{{ item.slide_html }}</div>
       </div>
     {% endfor %}
